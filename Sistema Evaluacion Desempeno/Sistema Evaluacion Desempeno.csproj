@@ -46,6 +46,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conex2.cs" />
+    <Compile Include="DataGeneral.cs">
+      <DependentUpon>DataGeneral.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataGeneral.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataGeneral.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBusqueda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBusqueda.Designer.cs">
+      <DependentUpon>FrmBusqueda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDepartamento.Designer.cs">
+      <DependentUpon>FrmDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmpleados.Designer.cs">
+      <DependentUpon>FrmEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEvaluacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEvaluacion.Designer.cs">
+      <DependentUpon>FrmEvaluacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmInicioResumen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +99,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmBusqueda.resx">
+      <DependentUpon>FrmBusqueda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDepartamento.resx">
+      <DependentUpon>FrmDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmpleados.resx">
+      <DependentUpon>FrmEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEvaluacion.resx">
+      <DependentUpon>FrmEvaluacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmInicioResumen.resx">
       <DependentUpon>FrmInicioResumen.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,6 +130,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="DataGeneral.xsc">
+      <DependentUpon>DataGeneral.xsd</DependentUpon>
+    </None>
+    <None Include="DataGeneral.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataGeneral.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataGeneral.xss">
+      <DependentUpon>DataGeneral.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -96,7 +152,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
@@ -110,6 +168,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\EVD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\binoculars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

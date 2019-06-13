@@ -44,6 +44,8 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Acceso.cs" />
+    <Compile Include="DepartamentosDAL.cs" />
+    <Compile Include="EmpleadosDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,19 @@
+USE [EvaluacionDesempeno]
+GO
+/****** Object:  StoredProcedure [dbo].[DepartamentosInsertar]    Script Date: 2019-06-11 23:28:42 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER procedure [dbo].[DepartamentosInsertar](
+@codigo_departamento int,
+@descripcion_departamento varchar(150)
+)
+as
+If Exists (SELECT * FROM departamentos WHERE codigo_departamento=@codigo_departamento)
+
+UPDATE departamentos set descripcion_departamento=@descripcion_departamento WHERE codigo_departamento=@codigo_departamento
+
+Else
+INSERT INTO departamentos
+		VALUES ((SELECT ISNULL(MAX (codigo_departamento)+ 1,1) FROM departamentos), @descripcion_departamento)

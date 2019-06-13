@@ -24,7 +24,7 @@ namespace Datos
         {
             get
             {
-                return ConfigurationManager.ConnectionStrings["FinalTresCapas.Properties.Settings.Conectar"].ToString();
+                return ConfigurationManager.ConnectionStrings["Sistema_Evaluacion_Desempeno.Properties.Settings.Conectar"].ToString();
                 //@"Data Source = .\SQLEXPRESS;Initial Catalog = BD_IPD; Integrated Security = true";
             }
 

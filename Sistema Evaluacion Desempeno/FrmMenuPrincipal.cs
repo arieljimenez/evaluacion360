@@ -50,5 +50,17 @@ namespace Sistema_Evaluacion_Desempeno
         {
             Application.Exit();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmEmpleados irEmpleados = new FrmEmpleados();
+            irEmpleados.Show();
+        }
+
+        private void btnprod_Click(object sender, EventArgs e)
+        {
+            FrmDepartamento irDepartamentos = new FrmDepartamento();
+            irDepartamentos.Show();
+        }
     }
 }

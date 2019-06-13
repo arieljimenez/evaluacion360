@@ -44,11 +44,11 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblusuario = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnprod = new System.Windows.Forms.Button();
+            this.btnManejarEvaluacion = new System.Windows.Forms.Button();
+            this.btnManejarCompetencia = new System.Windows.Forms.Button();
+            this.btnManejarEmpleado = new System.Windows.Forms.Button();
+            this.btnManejarPerfil = new System.Windows.Forms.Button();
+            this.btnManejarDepartamento = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -86,11 +86,11 @@
             this.MenuVertical.Controls.Add(this.pictureBox2);
             this.MenuVertical.Controls.Add(this.lblusuario);
             this.MenuVertical.Controls.Add(this.button6);
-            this.MenuVertical.Controls.Add(this.button5);
-            this.MenuVertical.Controls.Add(this.button4);
-            this.MenuVertical.Controls.Add(this.button3);
-            this.MenuVertical.Controls.Add(this.button2);
-            this.MenuVertical.Controls.Add(this.btnprod);
+            this.MenuVertical.Controls.Add(this.btnManejarEvaluacion);
+            this.MenuVertical.Controls.Add(this.btnManejarCompetencia);
+            this.MenuVertical.Controls.Add(this.btnManejarEmpleado);
+            this.MenuVertical.Controls.Add(this.btnManejarPerfil);
+            this.MenuVertical.Controls.Add(this.btnManejarDepartamento);
             this.MenuVertical.Controls.Add(this.label2);
             this.MenuVertical.Controls.Add(this.label1);
             this.MenuVertical.Controls.Add(this.pictureBox1);
@@ -292,90 +292,92 @@
             this.button6.Text = "Configuración";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnManejarEvaluacion
             // 
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(-12, 324);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(262, 40);
-            this.button5.TabIndex = 11;
-            this.button5.Text = "Compras";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnManejarEvaluacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnManejarEvaluacion.FlatAppearance.BorderSize = 0;
+            this.btnManejarEvaluacion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnManejarEvaluacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnManejarEvaluacion.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManejarEvaluacion.ForeColor = System.Drawing.Color.White;
+            this.btnManejarEvaluacion.Image = ((System.Drawing.Image)(resources.GetObject("btnManejarEvaluacion.Image")));
+            this.btnManejarEvaluacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnManejarEvaluacion.Location = new System.Drawing.Point(-12, 324);
+            this.btnManejarEvaluacion.Name = "btnManejarEvaluacion";
+            this.btnManejarEvaluacion.Size = new System.Drawing.Size(262, 40);
+            this.btnManejarEvaluacion.TabIndex = 11;
+            this.btnManejarEvaluacion.Text = "Evaluacion";
+            this.btnManejarEvaluacion.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnManejarCompetencia
             // 
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(-12, 279);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(262, 40);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "Proveedores";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnManejarCompetencia.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnManejarCompetencia.FlatAppearance.BorderSize = 0;
+            this.btnManejarCompetencia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnManejarCompetencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnManejarCompetencia.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManejarCompetencia.ForeColor = System.Drawing.Color.White;
+            this.btnManejarCompetencia.Image = ((System.Drawing.Image)(resources.GetObject("btnManejarCompetencia.Image")));
+            this.btnManejarCompetencia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnManejarCompetencia.Location = new System.Drawing.Point(-12, 279);
+            this.btnManejarCompetencia.Name = "btnManejarCompetencia";
+            this.btnManejarCompetencia.Size = new System.Drawing.Size(262, 40);
+            this.btnManejarCompetencia.TabIndex = 10;
+            this.btnManejarCompetencia.Text = "Competencia";
+            this.btnManejarCompetencia.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnManejarEmpleado
             // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(-12, 234);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(262, 40);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Clientes";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnManejarEmpleado.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnManejarEmpleado.FlatAppearance.BorderSize = 0;
+            this.btnManejarEmpleado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnManejarEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnManejarEmpleado.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManejarEmpleado.ForeColor = System.Drawing.Color.White;
+            this.btnManejarEmpleado.Image = ((System.Drawing.Image)(resources.GetObject("btnManejarEmpleado.Image")));
+            this.btnManejarEmpleado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnManejarEmpleado.Location = new System.Drawing.Point(-12, 234);
+            this.btnManejarEmpleado.Name = "btnManejarEmpleado";
+            this.btnManejarEmpleado.Size = new System.Drawing.Size(262, 40);
+            this.btnManejarEmpleado.TabIndex = 9;
+            this.btnManejarEmpleado.Text = "Empleado";
+            this.btnManejarEmpleado.UseVisualStyleBackColor = true;
+            this.btnManejarEmpleado.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // btnManejarPerfil
             // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(-12, 190);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(262, 40);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Ventas";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnManejarPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnManejarPerfil.FlatAppearance.BorderSize = 0;
+            this.btnManejarPerfil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnManejarPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnManejarPerfil.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManejarPerfil.ForeColor = System.Drawing.Color.White;
+            this.btnManejarPerfil.Image = ((System.Drawing.Image)(resources.GetObject("btnManejarPerfil.Image")));
+            this.btnManejarPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnManejarPerfil.Location = new System.Drawing.Point(-12, 190);
+            this.btnManejarPerfil.Name = "btnManejarPerfil";
+            this.btnManejarPerfil.Size = new System.Drawing.Size(262, 40);
+            this.btnManejarPerfil.TabIndex = 8;
+            this.btnManejarPerfil.Text = "Perfil";
+            this.btnManejarPerfil.UseVisualStyleBackColor = true;
             // 
-            // btnprod
+            // btnManejarDepartamento
             // 
-            this.btnprod.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnprod.FlatAppearance.BorderSize = 0;
-            this.btnprod.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnprod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnprod.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnprod.ForeColor = System.Drawing.Color.White;
-            this.btnprod.Image = ((System.Drawing.Image)(resources.GetObject("btnprod.Image")));
-            this.btnprod.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnprod.Location = new System.Drawing.Point(-12, 145);
-            this.btnprod.Name = "btnprod";
-            this.btnprod.Size = new System.Drawing.Size(262, 40);
-            this.btnprod.TabIndex = 7;
-            this.btnprod.Text = "Productos";
-            this.btnprod.UseVisualStyleBackColor = true;
+            this.btnManejarDepartamento.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnManejarDepartamento.FlatAppearance.BorderSize = 0;
+            this.btnManejarDepartamento.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnManejarDepartamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnManejarDepartamento.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManejarDepartamento.ForeColor = System.Drawing.Color.White;
+            this.btnManejarDepartamento.Image = ((System.Drawing.Image)(resources.GetObject("btnManejarDepartamento.Image")));
+            this.btnManejarDepartamento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnManejarDepartamento.Location = new System.Drawing.Point(-12, 145);
+            this.btnManejarDepartamento.Name = "btnManejarDepartamento";
+            this.btnManejarDepartamento.Size = new System.Drawing.Size(262, 40);
+            this.btnManejarDepartamento.TabIndex = 7;
+            this.btnManejarDepartamento.Text = "Departamentos";
+            this.btnManejarDepartamento.UseVisualStyleBackColor = true;
+            this.btnManejarDepartamento.Click += new System.EventHandler(this.btnprod_Click);
             // 
             // label2
             // 
@@ -543,11 +545,9 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblusuario;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnprod;
+        private System.Windows.Forms.Button btnManejarEvaluacion;
+        private System.Windows.Forms.Button btnManejarCompetencia;
+        private System.Windows.Forms.Button btnManejarPerfil;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
@@ -558,5 +558,7 @@
         private System.Windows.Forms.PictureBox iconmaximizar;
         private System.Windows.Forms.PictureBox iconcerrar;
         private System.Windows.Forms.PictureBox btnslide;
+        public System.Windows.Forms.Button btnManejarDepartamento;
+        public System.Windows.Forms.Button btnManejarEmpleado;
     }
 }
