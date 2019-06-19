@@ -74,7 +74,7 @@ namespace Sistema_Evaluacion_Desempeno
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
-
+           
         }
     }
 }

@@ -35,16 +35,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lblcorreo = new System.Windows.Forms.Label();
             this.lbluser = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblusuario = new System.Windows.Forms.Label();
-            this.btnManejarEvaluacion = new System.Windows.Forms.Button();
             this.btnManejarCompetencia = new System.Windows.Forms.Button();
-            this.btnManejarEmpleado = new System.Windows.Forms.Button();
-            this.btnManejarPerfil = new System.Windows.Forms.Button();
-            this.btnManejarDepartamento = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelContenedor = new System.Windows.Forms.Panel();
             this.BarraTitulo = new System.Windows.Forms.Panel();
             this.iconminimizar = new System.Windows.Forms.PictureBox();
@@ -52,9 +46,14 @@
             this.iconmaximizar = new System.Windows.Forms.PictureBox();
             this.iconcerrar = new System.Windows.Forms.PictureBox();
             this.btnslide = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnManejarEvaluacion = new System.Windows.Forms.Button();
+            this.btnManejarEmpleado = new System.Windows.Forms.Button();
+            this.btnManejarPerfil = new System.Windows.Forms.Button();
+            this.btnManejarDepartamento = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnPosiciones = new System.Windows.Forms.Button();
             this.MenuVertical.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PanelContenedor.SuspendLayout();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconminimizar)).BeginInit();
@@ -62,11 +61,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconmaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconcerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnslide)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.MenuVertical.Controls.Add(this.btnPosiciones);
             this.MenuVertical.Controls.Add(this.label5);
             this.MenuVertical.Controls.Add(this.label4);
             this.MenuVertical.Controls.Add(this.label3);
@@ -148,17 +150,6 @@
             this.lbluser.TabIndex = 20;
             this.lbluser.Text = "Usuario";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(3, 575);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(70, 33);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 19;
-            this.pictureBox2.TabStop = false;
-            // 
             // lblusuario
             // 
             this.lblusuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -171,23 +162,6 @@
             this.lblusuario.TabIndex = 18;
             this.lblusuario.Text = "Cargo";
             // 
-            // btnManejarEvaluacion
-            // 
-            this.btnManejarEvaluacion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnManejarEvaluacion.FlatAppearance.BorderSize = 0;
-            this.btnManejarEvaluacion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnManejarEvaluacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnManejarEvaluacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManejarEvaluacion.ForeColor = System.Drawing.Color.White;
-            this.btnManejarEvaluacion.Image = ((System.Drawing.Image)(resources.GetObject("btnManejarEvaluacion.Image")));
-            this.btnManejarEvaluacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnManejarEvaluacion.Location = new System.Drawing.Point(-12, 324);
-            this.btnManejarEvaluacion.Name = "btnManejarEvaluacion";
-            this.btnManejarEvaluacion.Size = new System.Drawing.Size(262, 40);
-            this.btnManejarEvaluacion.TabIndex = 11;
-            this.btnManejarEvaluacion.Text = "Evaluacion";
-            this.btnManejarEvaluacion.UseVisualStyleBackColor = true;
-            // 
             // btnManejarCompetencia
             // 
             this.btnManejarCompetencia.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -196,67 +170,12 @@
             this.btnManejarCompetencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnManejarCompetencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManejarCompetencia.ForeColor = System.Drawing.Color.White;
-            this.btnManejarCompetencia.Image = ((System.Drawing.Image)(resources.GetObject("btnManejarCompetencia.Image")));
-            this.btnManejarCompetencia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnManejarCompetencia.Location = new System.Drawing.Point(-12, 279);
             this.btnManejarCompetencia.Name = "btnManejarCompetencia";
             this.btnManejarCompetencia.Size = new System.Drawing.Size(262, 40);
             this.btnManejarCompetencia.TabIndex = 10;
             this.btnManejarCompetencia.Text = "Competencia";
             this.btnManejarCompetencia.UseVisualStyleBackColor = true;
-            // 
-            // btnManejarEmpleado
-            // 
-            this.btnManejarEmpleado.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnManejarEmpleado.FlatAppearance.BorderSize = 0;
-            this.btnManejarEmpleado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnManejarEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnManejarEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManejarEmpleado.ForeColor = System.Drawing.Color.White;
-            this.btnManejarEmpleado.Image = ((System.Drawing.Image)(resources.GetObject("btnManejarEmpleado.Image")));
-            this.btnManejarEmpleado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnManejarEmpleado.Location = new System.Drawing.Point(-12, 234);
-            this.btnManejarEmpleado.Name = "btnManejarEmpleado";
-            this.btnManejarEmpleado.Size = new System.Drawing.Size(262, 40);
-            this.btnManejarEmpleado.TabIndex = 9;
-            this.btnManejarEmpleado.Text = "Empleado";
-            this.btnManejarEmpleado.UseVisualStyleBackColor = true;
-            this.btnManejarEmpleado.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // btnManejarPerfil
-            // 
-            this.btnManejarPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnManejarPerfil.FlatAppearance.BorderSize = 0;
-            this.btnManejarPerfil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnManejarPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnManejarPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManejarPerfil.ForeColor = System.Drawing.Color.White;
-            this.btnManejarPerfil.Image = ((System.Drawing.Image)(resources.GetObject("btnManejarPerfil.Image")));
-            this.btnManejarPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnManejarPerfil.Location = new System.Drawing.Point(-12, 190);
-            this.btnManejarPerfil.Name = "btnManejarPerfil";
-            this.btnManejarPerfil.Size = new System.Drawing.Size(262, 40);
-            this.btnManejarPerfil.TabIndex = 8;
-            this.btnManejarPerfil.Text = "Perfil";
-            this.btnManejarPerfil.UseVisualStyleBackColor = true;
-            // 
-            // btnManejarDepartamento
-            // 
-            this.btnManejarDepartamento.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnManejarDepartamento.FlatAppearance.BorderSize = 0;
-            this.btnManejarDepartamento.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnManejarDepartamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnManejarDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManejarDepartamento.ForeColor = System.Drawing.Color.White;
-            this.btnManejarDepartamento.Image = ((System.Drawing.Image)(resources.GetObject("btnManejarDepartamento.Image")));
-            this.btnManejarDepartamento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnManejarDepartamento.Location = new System.Drawing.Point(-12, 145);
-            this.btnManejarDepartamento.Name = "btnManejarDepartamento";
-            this.btnManejarDepartamento.Size = new System.Drawing.Size(262, 40);
-            this.btnManejarDepartamento.TabIndex = 7;
-            this.btnManejarDepartamento.Text = "Departamentos";
-            this.btnManejarDepartamento.UseVisualStyleBackColor = true;
-            this.btnManejarDepartamento.Click += new System.EventHandler(this.btnprod_Click);
             // 
             // label2
             // 
@@ -283,16 +202,6 @@
             this.label1.Size = new System.Drawing.Size(130, 29);
             this.label1.TabIndex = 2;
             this.label1.Text = "Evaluación";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(7, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(63, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // PanelContenedor
             // 
@@ -381,6 +290,113 @@
             this.btnslide.TabStop = false;
             this.btnslide.Click += new System.EventHandler(this.btnslide_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(3, 575);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(70, 33);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 19;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnManejarEvaluacion
+            // 
+            this.btnManejarEvaluacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnManejarEvaluacion.FlatAppearance.BorderSize = 0;
+            this.btnManejarEvaluacion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnManejarEvaluacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnManejarEvaluacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManejarEvaluacion.ForeColor = System.Drawing.Color.White;
+            this.btnManejarEvaluacion.Image = ((System.Drawing.Image)(resources.GetObject("btnManejarEvaluacion.Image")));
+            this.btnManejarEvaluacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnManejarEvaluacion.Location = new System.Drawing.Point(-12, 324);
+            this.btnManejarEvaluacion.Name = "btnManejarEvaluacion";
+            this.btnManejarEvaluacion.Size = new System.Drawing.Size(262, 40);
+            this.btnManejarEvaluacion.TabIndex = 11;
+            this.btnManejarEvaluacion.Text = "Evaluacion";
+            this.btnManejarEvaluacion.UseVisualStyleBackColor = true;
+            // 
+            // btnManejarEmpleado
+            // 
+            this.btnManejarEmpleado.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnManejarEmpleado.FlatAppearance.BorderSize = 0;
+            this.btnManejarEmpleado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnManejarEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnManejarEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManejarEmpleado.ForeColor = System.Drawing.Color.White;
+            this.btnManejarEmpleado.Image = ((System.Drawing.Image)(resources.GetObject("btnManejarEmpleado.Image")));
+            this.btnManejarEmpleado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnManejarEmpleado.Location = new System.Drawing.Point(-12, 234);
+            this.btnManejarEmpleado.Name = "btnManejarEmpleado";
+            this.btnManejarEmpleado.Size = new System.Drawing.Size(262, 40);
+            this.btnManejarEmpleado.TabIndex = 9;
+            this.btnManejarEmpleado.Text = "Empleado";
+            this.btnManejarEmpleado.UseVisualStyleBackColor = true;
+            this.btnManejarEmpleado.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // btnManejarPerfil
+            // 
+            this.btnManejarPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnManejarPerfil.FlatAppearance.BorderSize = 0;
+            this.btnManejarPerfil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnManejarPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnManejarPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManejarPerfil.ForeColor = System.Drawing.Color.White;
+            this.btnManejarPerfil.Image = ((System.Drawing.Image)(resources.GetObject("btnManejarPerfil.Image")));
+            this.btnManejarPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnManejarPerfil.Location = new System.Drawing.Point(-12, 190);
+            this.btnManejarPerfil.Name = "btnManejarPerfil";
+            this.btnManejarPerfil.Size = new System.Drawing.Size(262, 40);
+            this.btnManejarPerfil.TabIndex = 8;
+            this.btnManejarPerfil.Text = "Perfil";
+            this.btnManejarPerfil.UseVisualStyleBackColor = true;
+            // 
+            // btnManejarDepartamento
+            // 
+            this.btnManejarDepartamento.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnManejarDepartamento.FlatAppearance.BorderSize = 0;
+            this.btnManejarDepartamento.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnManejarDepartamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnManejarDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManejarDepartamento.ForeColor = System.Drawing.Color.White;
+            this.btnManejarDepartamento.Image = ((System.Drawing.Image)(resources.GetObject("btnManejarDepartamento.Image")));
+            this.btnManejarDepartamento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnManejarDepartamento.Location = new System.Drawing.Point(-12, 145);
+            this.btnManejarDepartamento.Name = "btnManejarDepartamento";
+            this.btnManejarDepartamento.Size = new System.Drawing.Size(262, 40);
+            this.btnManejarDepartamento.TabIndex = 7;
+            this.btnManejarDepartamento.Text = "Departamentos";
+            this.btnManejarDepartamento.UseVisualStyleBackColor = true;
+            this.btnManejarDepartamento.Click += new System.EventHandler(this.btnprod_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Location = new System.Drawing.Point(7, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(63, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnPosiciones
+            // 
+            this.btnPosiciones.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPosiciones.FlatAppearance.BorderSize = 0;
+            this.btnPosiciones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnPosiciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPosiciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPosiciones.ForeColor = System.Drawing.Color.White;
+            this.btnPosiciones.Location = new System.Drawing.Point(-12, 370);
+            this.btnPosiciones.Name = "btnPosiciones";
+            this.btnPosiciones.Size = new System.Drawing.Size(262, 40);
+            this.btnPosiciones.TabIndex = 25;
+            this.btnPosiciones.Text = "Posiciones";
+            this.btnPosiciones.UseVisualStyleBackColor = true;
+            this.btnPosiciones.Click += new System.EventHandler(this.btnPosiciones_Click);
+            // 
             // FrmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -394,8 +410,6 @@
             this.Text = "FrmMenuPrincipal";
             this.MenuVertical.ResumeLayout(false);
             this.MenuVertical.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.PanelContenedor.ResumeLayout(false);
             this.BarraTitulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iconminimizar)).EndInit();
@@ -403,6 +417,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconmaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconcerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnslide)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -431,5 +447,6 @@
         private System.Windows.Forms.PictureBox btnslide;
         public System.Windows.Forms.Button btnManejarDepartamento;
         public System.Windows.Forms.Button btnManejarEmpleado;
+        private System.Windows.Forms.Button btnPosiciones;
     }
 }

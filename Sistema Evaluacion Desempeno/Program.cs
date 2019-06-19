@@ -17,6 +17,7 @@ namespace Sistema_Evaluacion_Desempeno
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrLogin());
+            // Application.Run(new FrLogin());
         }
     }
 }

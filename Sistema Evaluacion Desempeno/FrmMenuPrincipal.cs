@@ -62,5 +62,11 @@ namespace Sistema_Evaluacion_Desempeno
             FrmDepartamento irDepartamentos = new FrmDepartamento();
             irDepartamentos.Show();
         }
+
+        private void btnPosiciones_Click(object sender, EventArgs e)
+        {
+            FrmPosiciones frm = new FrmPosiciones();
+            frm.Show();
+        }
     }
 }
