@@ -1,3 +1,6 @@
+-- create database EvaluacionDesempeno;
+-- go
+
 USE [EvaluacionDesempeno]
 GO
 
@@ -45,11 +48,11 @@ INSERT INTO [dbo].[empleado](
   ManejarFrecuencia)
 
 VALUES(
-  ariel,
-  Jimenez,
+  'ariel',
+  'Jimenez',
   1,
   1,
-  ariel,
+  'ariel',
   1,
   1,
   1,
