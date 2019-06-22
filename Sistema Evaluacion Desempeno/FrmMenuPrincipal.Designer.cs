@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenuPrincipal));
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.btnFactores = new System.Windows.Forms.Button();
             this.btnPosiciones = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -53,7 +54,7 @@
             this.iconmaximizar = new System.Windows.Forms.PictureBox();
             this.iconcerrar = new System.Windows.Forms.PictureBox();
             this.btnslide = new System.Windows.Forms.PictureBox();
-            this.btnFactores = new System.Windows.Forms.Button();
+            this.btnFactoresDescripcion = new System.Windows.Forms.Button();
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -69,6 +70,7 @@
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.MenuVertical.Controls.Add(this.btnFactoresDescripcion);
             this.MenuVertical.Controls.Add(this.btnFactores);
             this.MenuVertical.Controls.Add(this.btnPosiciones);
             this.MenuVertical.Controls.Add(this.label5);
@@ -91,6 +93,22 @@
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(250, 611);
             this.MenuVertical.TabIndex = 3;
+            // 
+            // btnFactores
+            // 
+            this.btnFactores.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFactores.FlatAppearance.BorderSize = 0;
+            this.btnFactores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnFactores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFactores.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFactores.ForeColor = System.Drawing.Color.White;
+            this.btnFactores.Location = new System.Drawing.Point(-12, 416);
+            this.btnFactores.Name = "btnFactores";
+            this.btnFactores.Size = new System.Drawing.Size(262, 40);
+            this.btnFactores.TabIndex = 26;
+            this.btnFactores.Text = "Factores";
+            this.btnFactores.UseVisualStyleBackColor = true;
+            this.btnFactores.Click += new System.EventHandler(this.btnFactores_Click);
             // 
             // btnPosiciones
             // 
@@ -199,7 +217,6 @@
             this.btnManejarEvaluacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnManejarEvaluacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManejarEvaluacion.ForeColor = System.Drawing.Color.White;
-            this.btnManejarEvaluacion.Image = ((System.Drawing.Image)(resources.GetObject("btnManejarEvaluacion.Image")));
             this.btnManejarEvaluacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnManejarEvaluacion.Location = new System.Drawing.Point(-12, 324);
             this.btnManejarEvaluacion.Name = "btnManejarEvaluacion";
@@ -207,6 +224,7 @@
             this.btnManejarEvaluacion.TabIndex = 11;
             this.btnManejarEvaluacion.Text = "Evaluacion";
             this.btnManejarEvaluacion.UseVisualStyleBackColor = true;
+            this.btnManejarEvaluacion.Click += new System.EventHandler(this.btnManejarEvaluacion_Click);
             // 
             // btnManejarCompetencia
             // 
@@ -249,7 +267,6 @@
             this.btnManejarPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnManejarPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManejarPerfil.ForeColor = System.Drawing.Color.White;
-            this.btnManejarPerfil.Image = ((System.Drawing.Image)(resources.GetObject("btnManejarPerfil.Image")));
             this.btnManejarPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnManejarPerfil.Location = new System.Drawing.Point(-12, 190);
             this.btnManejarPerfil.Name = "btnManejarPerfil";
@@ -399,21 +416,21 @@
             this.btnslide.TabStop = false;
             this.btnslide.Click += new System.EventHandler(this.btnslide_Click);
             // 
-            // btnFactores
+            // btnFactoresDescripcion
             // 
-            this.btnFactores.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFactores.FlatAppearance.BorderSize = 0;
-            this.btnFactores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnFactores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFactores.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFactores.ForeColor = System.Drawing.Color.White;
-            this.btnFactores.Location = new System.Drawing.Point(-12, 416);
-            this.btnFactores.Name = "btnFactores";
-            this.btnFactores.Size = new System.Drawing.Size(262, 40);
-            this.btnFactores.TabIndex = 26;
-            this.btnFactores.Text = "Factores";
-            this.btnFactores.UseVisualStyleBackColor = true;
-            this.btnFactores.Click += new System.EventHandler(this.btnFactores_Click);
+            this.btnFactoresDescripcion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFactoresDescripcion.FlatAppearance.BorderSize = 0;
+            this.btnFactoresDescripcion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnFactoresDescripcion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFactoresDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFactoresDescripcion.ForeColor = System.Drawing.Color.White;
+            this.btnFactoresDescripcion.Location = new System.Drawing.Point(-12, 453);
+            this.btnFactoresDescripcion.Name = "btnFactoresDescripcion";
+            this.btnFactoresDescripcion.Size = new System.Drawing.Size(262, 40);
+            this.btnFactoresDescripcion.TabIndex = 27;
+            this.btnFactoresDescripcion.Text = "Descripcion de Factores";
+            this.btnFactoresDescripcion.UseVisualStyleBackColor = true;
+            this.btnFactoresDescripcion.Click += new System.EventHandler(this.btnFactoresDescripcion_Click);
             // 
             // FrmMenuPrincipal
             // 
@@ -467,5 +484,6 @@
         public System.Windows.Forms.Button btnManejarEmpleado;
         private System.Windows.Forms.Button btnPosiciones;
         private System.Windows.Forms.Button btnFactores;
+        private System.Windows.Forms.Button btnFactoresDescripcion;
     }
 }

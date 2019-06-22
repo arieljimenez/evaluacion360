@@ -74,5 +74,16 @@ namespace Sistema_Evaluacion_Desempeno
             FactoresFrm frm = new FactoresFrm();
             frm.Show();
         }
+
+        private void btnFactoresDescripcion_Click(object sender, EventArgs e)
+        {
+            FrmFactoresDescripcion frm = new FrmFactoresDescripcion();
+            frm.Show();
+        }
+
+        private void btnManejarEvaluacion_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
