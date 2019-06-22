@@ -30,6 +30,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -44,6 +47,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="DepartamentosBL.cs" />
     <Compile Include="EmpleadosBL.cs" />
+    <Compile Include="FactorBL.cs" />
     <Compile Include="PosicionBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

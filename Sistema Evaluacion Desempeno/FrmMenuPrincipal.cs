@@ -68,5 +68,11 @@ namespace Sistema_Evaluacion_Desempeno
             FrmPosiciones frm = new FrmPosiciones();
             frm.Show();
         }
+
+        private void btnFactores_Click(object sender, EventArgs e)
+        {
+            FactoresFrm frm = new FactoresFrm();
+            frm.Show();
+        }
     }
 }
