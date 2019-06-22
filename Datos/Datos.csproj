@@ -47,6 +47,7 @@
     <Compile Include="DepartamentosDAL.cs" />
     <Compile Include="EmpleadosDAL.cs" />
     <Compile Include="FactorDAL.cs" />
+    <Compile Include="FactoresDescripcionDAL.cs" />
     <Compile Include="PosicionDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
