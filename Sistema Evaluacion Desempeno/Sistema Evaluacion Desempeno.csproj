@@ -126,6 +126,12 @@
     <Compile Include="FrmInicioResumen.Designer.cs">
       <DependentUpon>FrmInicioResumen.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmLlenarPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLlenarPerfil.Designer.cs">
+      <DependentUpon>FrmLlenarPerfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,12 @@
     </Compile>
     <Compile Include="FrmMenuPrincipal.Designer.cs">
       <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPerfil.Designer.cs">
+      <DependentUpon>FrmPerfil.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPosiciones.cs">
       <SubType>Form</SubType>
@@ -170,11 +182,17 @@
     <EmbeddedResource Include="FrmInicioResumen.resx">
       <DependentUpon>FrmInicioResumen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmLlenarPerfil.resx">
+      <DependentUpon>FrmLlenarPerfil.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuPrincipal.resx">
       <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPerfil.resx">
+      <DependentUpon>FrmPerfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPosiciones.resx">
       <DependentUpon>FrmPosiciones.cs</DependentUpon>

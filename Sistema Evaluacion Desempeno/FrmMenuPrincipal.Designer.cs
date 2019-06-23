@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenuPrincipal));
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.btnFactoresDescripcion = new System.Windows.Forms.Button();
             this.btnFactores = new System.Windows.Forms.Button();
             this.btnPosiciones = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -54,7 +55,10 @@
             this.iconmaximizar = new System.Windows.Forms.PictureBox();
             this.iconcerrar = new System.Windows.Forms.PictureBox();
             this.btnslide = new System.Windows.Forms.PictureBox();
-            this.btnFactoresDescripcion = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbPerfil = new System.Windows.Forms.GroupBox();
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -65,11 +69,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconmaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconcerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnslide)).BeginInit();
+            this.gbPerfil.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.MenuVertical.Controls.Add(this.groupBox1);
             this.MenuVertical.Controls.Add(this.btnFactoresDescripcion);
             this.MenuVertical.Controls.Add(this.btnFactores);
             this.MenuVertical.Controls.Add(this.btnPosiciones);
@@ -93,6 +99,22 @@
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(250, 611);
             this.MenuVertical.TabIndex = 3;
+            // 
+            // btnFactoresDescripcion
+            // 
+            this.btnFactoresDescripcion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFactoresDescripcion.FlatAppearance.BorderSize = 0;
+            this.btnFactoresDescripcion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnFactoresDescripcion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFactoresDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFactoresDescripcion.ForeColor = System.Drawing.Color.White;
+            this.btnFactoresDescripcion.Location = new System.Drawing.Point(-12, 453);
+            this.btnFactoresDescripcion.Name = "btnFactoresDescripcion";
+            this.btnFactoresDescripcion.Size = new System.Drawing.Size(262, 40);
+            this.btnFactoresDescripcion.TabIndex = 27;
+            this.btnFactoresDescripcion.Text = "Descripcion de Factores";
+            this.btnFactoresDescripcion.UseVisualStyleBackColor = true;
+            this.btnFactoresDescripcion.Click += new System.EventHandler(this.btnFactoresDescripcion_Click);
             // 
             // btnFactores
             // 
@@ -274,6 +296,10 @@
             this.btnManejarPerfil.TabIndex = 8;
             this.btnManejarPerfil.Text = "Perfil";
             this.btnManejarPerfil.UseVisualStyleBackColor = true;
+            this.btnManejarPerfil.Click += new System.EventHandler(this.btnManejarPerfil_Click);
+            this.btnManejarPerfil.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnManejarPerfil_MouseDown);
+            this.btnManejarPerfil.MouseLeave += new System.EventHandler(this.btnManejarPerfil_MouseLeave);
+            this.btnManejarPerfil.MouseHover += new System.EventHandler(this.btnManejarPerfil_MouseHover);
             // 
             // btnManejarDepartamento
             // 
@@ -332,12 +358,12 @@
             // PanelContenedor
             // 
             this.PanelContenedor.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PanelContenedor.Controls.Add(this.gbPerfil);
             this.PanelContenedor.Controls.Add(this.BarraTitulo);
-            this.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelContenedor.ForeColor = System.Drawing.Color.White;
             this.PanelContenedor.Location = new System.Drawing.Point(250, 0);
             this.PanelContenedor.Name = "PanelContenedor";
-            this.PanelContenedor.Size = new System.Drawing.Size(784, 611);
+            this.PanelContenedor.Size = new System.Drawing.Size(772, 611);
             this.PanelContenedor.TabIndex = 5;
             // 
             // BarraTitulo
@@ -351,7 +377,7 @@
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(784, 45);
+            this.BarraTitulo.Size = new System.Drawing.Size(772, 45);
             this.BarraTitulo.TabIndex = 5;
             // 
             // iconminimizar
@@ -359,7 +385,7 @@
             this.iconminimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.iconminimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconminimizar.Image = ((System.Drawing.Image)(resources.GetObject("iconminimizar.Image")));
-            this.iconminimizar.Location = new System.Drawing.Point(703, 9);
+            this.iconminimizar.Location = new System.Drawing.Point(691, 9);
             this.iconminimizar.Name = "iconminimizar";
             this.iconminimizar.Size = new System.Drawing.Size(18, 18);
             this.iconminimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -371,7 +397,7 @@
             this.iconrestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.iconrestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconrestaurar.Image = ((System.Drawing.Image)(resources.GetObject("iconrestaurar.Image")));
-            this.iconrestaurar.Location = new System.Drawing.Point(731, 9);
+            this.iconrestaurar.Location = new System.Drawing.Point(719, 9);
             this.iconrestaurar.Name = "iconrestaurar";
             this.iconrestaurar.Size = new System.Drawing.Size(18, 18);
             this.iconrestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -384,7 +410,7 @@
             this.iconmaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.iconmaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconmaximizar.Image = ((System.Drawing.Image)(resources.GetObject("iconmaximizar.Image")));
-            this.iconmaximizar.Location = new System.Drawing.Point(729, 9);
+            this.iconmaximizar.Location = new System.Drawing.Point(717, 9);
             this.iconmaximizar.Name = "iconmaximizar";
             this.iconmaximizar.Size = new System.Drawing.Size(18, 18);
             this.iconmaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -396,7 +422,7 @@
             this.iconcerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.iconcerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconcerrar.Image = ((System.Drawing.Image)(resources.GetObject("iconcerrar.Image")));
-            this.iconcerrar.Location = new System.Drawing.Point(755, 9);
+            this.iconcerrar.Location = new System.Drawing.Point(743, 9);
             this.iconcerrar.Name = "iconcerrar";
             this.iconcerrar.Size = new System.Drawing.Size(18, 18);
             this.iconcerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -416,21 +442,62 @@
             this.btnslide.TabStop = false;
             this.btnslide.Click += new System.EventHandler(this.btnslide_Click);
             // 
-            // btnFactoresDescripcion
+            // button2
             // 
-            this.btnFactoresDescripcion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFactoresDescripcion.FlatAppearance.BorderSize = 0;
-            this.btnFactoresDescripcion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnFactoresDescripcion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFactoresDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFactoresDescripcion.ForeColor = System.Drawing.Color.White;
-            this.btnFactoresDescripcion.Location = new System.Drawing.Point(-12, 453);
-            this.btnFactoresDescripcion.Name = "btnFactoresDescripcion";
-            this.btnFactoresDescripcion.Size = new System.Drawing.Size(262, 40);
-            this.btnFactoresDescripcion.TabIndex = 27;
-            this.btnFactoresDescripcion.Text = "Descripcion de Factores";
-            this.btnFactoresDescripcion.UseVisualStyleBackColor = true;
-            this.btnFactoresDescripcion.Click += new System.EventHandler(this.btnFactoresDescripcion_Click);
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(415, 17);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(262, 40);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Llenar Perfil";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(96, 17);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(254, 40);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "Perfil";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Location = new System.Drawing.Point(-15, -15);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 100);
+            this.groupBox1.TabIndex = 28;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
+            // gbPerfil
+            // 
+            this.gbPerfil.Controls.Add(this.button3);
+            this.gbPerfil.Controls.Add(this.button2);
+            this.gbPerfil.Location = new System.Drawing.Point(8, 171);
+            this.gbPerfil.Name = "gbPerfil";
+            this.gbPerfil.Size = new System.Drawing.Size(753, 63);
+            this.gbPerfil.TabIndex = 12;
+            this.gbPerfil.TabStop = false;
+            this.gbPerfil.Text = "Perfil";
+            this.gbPerfil.Visible = false;
             // 
             // FrmMenuPrincipal
             // 
@@ -443,6 +510,7 @@
             this.Name = "FrmMenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMenuPrincipal";
+            this.Load += new System.EventHandler(this.FrmMenuPrincipal_Load);
             this.MenuVertical.ResumeLayout(false);
             this.MenuVertical.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -454,6 +522,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconmaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconcerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnslide)).EndInit();
+            this.gbPerfil.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -485,5 +554,9 @@
         private System.Windows.Forms.Button btnPosiciones;
         private System.Windows.Forms.Button btnFactores;
         private System.Windows.Forms.Button btnFactoresDescripcion;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbPerfil;
     }
 }

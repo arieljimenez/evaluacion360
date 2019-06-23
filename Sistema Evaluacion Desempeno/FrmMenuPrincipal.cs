@@ -54,6 +54,7 @@ namespace Sistema_Evaluacion_Desempeno
         private void button3_Click(object sender, EventArgs e)
         {
             FrmEmpleados irEmpleados = new FrmEmpleados();
+            gbPerfil.Visible = false;
             irEmpleados.Show();
         }
 
@@ -84,6 +85,48 @@ namespace Sistema_Evaluacion_Desempeno
         private void btnManejarEvaluacion_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnManejarPerfil_MouseDown(object sender, MouseEventArgs e)
+        {
+          
+        }
+
+        private void btnManejarPerfil_MouseLeave(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btnManejarPerfil_MouseHover(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void FrmMenuPrincipal_Load(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void btnManejarPerfil_Click(object sender, EventArgs e)
+        {
+            gbPerfil.Visible = true;
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            FrmPerfil irPerfil = new FrmPerfil();
+            irPerfil.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FrmLlenarPerfil irperfilllenar = new FrmLlenarPerfil();
+            irperfilllenar.ShowDialog();
         }
     }
 }

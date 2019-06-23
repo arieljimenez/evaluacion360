@@ -46,6 +46,7 @@
     <Compile Include="Empleados.cs" />
     <Compile Include="Factor.cs" />
     <Compile Include="FactoresDescripcion.cs" />
+    <Compile Include="Perfil.cs" />
     <Compile Include="Posicion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

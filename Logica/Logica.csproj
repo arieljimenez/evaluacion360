@@ -49,6 +49,7 @@
     <Compile Include="EmpleadosBL.cs" />
     <Compile Include="FactorBL.cs" />
     <Compile Include="FactoresDescripcionBL.cs" />
+    <Compile Include="PerfilBL.cs" />
     <Compile Include="PosicionBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
